@@ -6,7 +6,10 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    public GameObject bird;
+    private GameObject[] birds;
+    public GameObject bird1;
+    public GameObject bird2;
+    public GameObject bird3;
     public TextMeshProUGUI textBox;
     public float timeBalancing;
     public float highScore;
@@ -26,6 +29,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        birds = new GameObject[] { bird1, bird2, bird3};
         timeBalancing = 0f;
         highScore = 0f;
         StartCoroutine("FallingBird");
@@ -53,6 +57,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         for(; ; )
         {
+            GameObject bird = birds[Random.Range(0, birds.Length)];
             Instantiate(bird);
             bird.transform.position = new Vector2(Random.Range(-9f,9f), 6);
             yield return new WaitForSeconds(Random.Range(.5f,1.5f));

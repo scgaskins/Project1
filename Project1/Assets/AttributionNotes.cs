@@ -4,6 +4,8 @@ using UnityEngine;
 
 // Pancake image from:
 // https://pixabay.com/vectors/breakfast-pancakes-stack-syrup-1295968/
+// Bear and Bird sprites from:
+// https://www.kenney.nl/assets/animal-pack-redux
 
 
 public class AttributionNotes : MonoBehaviour
