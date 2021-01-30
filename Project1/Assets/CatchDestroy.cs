@@ -25,7 +25,7 @@ public class CatchDestroy : MonoBehaviour
         if (collision.collider.name == "Pancake(Clone)")
         {
             Instantiate(pancake);
-            GameManager.instance.ResetTime();
+            GameManager.Instance.ResetTime();
         }
     }
 }
