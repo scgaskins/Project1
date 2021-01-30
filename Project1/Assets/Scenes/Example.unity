@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec608e484d4c7d5499a8d97d2ffde233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bird: {fileID: 1406976261490537367, guid: 1d39d0af45747194285bd5255e35b346, type: 3}
+  bird: {fileID: 7230472640352578576, guid: 1d39d0af45747194285bd5255e35b346, type: 3}
   textBox: {fileID: 1507556227}
   timeBalancing: 0
   highScore: 0
