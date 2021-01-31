@@ -39,16 +39,16 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timeBalancing += Time.deltaTime;
+        if (timeBalancing > highScore)
+        {
+            highScore = timeBalancing;
+        }
         textBox.text = "Time with Pancake: " + timeBalancing.ToString("F2") +
             "\n" + "High Score: " + highScore.ToString("F2");
     }
 
     public void ResetTime()
     {
-        if (timeBalancing > highScore)
-        {
-            highScore = timeBalancing;
-        }
         timeBalancing = 0f;
     }
 

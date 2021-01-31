@@ -6,6 +6,9 @@ using UnityEngine;
 // https://pixabay.com/vectors/breakfast-pancakes-stack-syrup-1295968/
 // Bear and Bird sprites from:
 // https://www.kenney.nl/assets/animal-pack-redux
+// Background image from:
+// https://opengameart.org/content/kitchen-background-4-styles
+// Original music created using BeepBox
 
 
 public class AttributionNotes : MonoBehaviour
