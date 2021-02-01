@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour
         for(; ; )
         {
             GameObject bird = birds[Random.Range(0, birds.Length)];
-            Instantiate(bird);
-            bird.transform.position = new Vector2(Random.Range(-9f,9f), 6);
+            GameObject birdObject = Instantiate(bird);
+            birdObject.transform.position = new Vector2(Random.Range(-9f,9f), 6);
             yield return new WaitForSeconds(Random.Range(.5f,1.5f));
         }
     }
